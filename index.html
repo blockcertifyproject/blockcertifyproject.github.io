@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>BLOCK CHAIN CERTIFY</title>
+
+<head>
+    <title>BlockCertify | Create and Verify NFT Certificates</title>
     <!--<link href="styles.css" rel="stylesheet" type="text/css">-->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- Latest compiled and minified CSS -->
@@ -12,60 +13,149 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-  </head>
-  <body>
-      <header class="header">
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:ital@1&display=swap" rel="stylesheet">
+
+    <!-- typing effect js -->
+
+
+</head>
+
+<body onload="typeWriter()">
+    <header class="header">
         <nav class="navbar navbar-style">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
-            <sapn class="icon-bar"></sapn>
-            <sapn class="icon-bar"></sapn>
-            <sapn class="icon-bar"></sapn>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="" class="logotext"><img class="logo" src="logo.png"><b>BlockCertify</b></a>
+                </div>
+                <div class="collapse navbar-collapse" id="micon">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <!-- <li><a href="">Review</a></li> -->
+                        <!-- <li><a href="">Our Customers</a></li> -->
+                        <li><a href="#contact">Contact Us</a></li>
 
-            
-            </button>
-            
-          <a href=""><img class="logo" src="logo.png"></a>
-          </div>
-          <div class="collapse navbar-collapse" id="micon">
-          <ul class="nav navbar-nav navbar-right">
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Review</a></li>
-          <li><a href="">Our Customers</a></li>
-          <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row" id="home">
+            <div class="col-sm-6 banner-info">
+                <h1 id="TypingEffectText">Certify and Verify documents with the Blockchain
+                </h1>
+                <h1 class="displayText"></h1>
+                <p class="big-text">BlockCertify</p>
+                <p>Educational Certificates, Legal Docs or Bonds, create NFTs for existing physical documents, and
+                    verify
+                    their
+                    credibility from anywhere around the globe.</p>
+                <a class="btn btn-first" href="/verify.html">VERIFY</a>
+                <a class="btn btn-second" href="/create.html">CREATE</a>
+            </div>
 
-          </ul>
+            <div class="col-sm-6 banner-image">
+                <img src="pic1.png" class="img-responsive">
+            </div>
         </div>
+        <div class="row" id="about">
+            <h3 class="text-center">ABOUT US</h3>
+            <p class="text-center">We are a group of passionate and goal-driven students developing this product /
+                software as a part of our
+                Bachelor's degree Project. We are making use of the Blockchain Technology to power our application,
+                where we
+                record transaction data and generate NFT Certificates by the inputs given by user.</p>
+            <br><br>
+            <h4 class="text-center">Our Team</h4>
+            <h5 class="col-md-1 text-center"> </h5>
+            <h5 class="col-md-2 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img"
+                            src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg">
+                    </li>
+                    <li>Dr. P Chinnasamy</li>
+                    <li>Associate Professor, Project Guide</li>
+
+                </ul>
+
+            </h5>
+            <h5 class="col-md-2 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img"
+                            src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg">
+                    </li>
+                    <li>Vishal Dhatrika</li>
+                    <li>UG Student, Dept. of CSE</li>
+
+                </ul>
+            </h5>
+            <h5 class="col-md-2 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img"
+                            src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg">
+                    </li>
+                    <li>Hemanth Kumar Dachiraju</li>
+                    <li>UG Student, Dept. of CSE</li>
+
+                </ul>
+            </h5>
+            <h5 class="col-md-2 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img"
+                            src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg">
+                    </li>
+                    <li>K Harish Chandra Prasad</li>
+                    <li>UG Student, Dept. of CSE</li>
+
+                </ul>
+            </h5>
+            <h5 class="col-md-2 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img"
+                            src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg">
+                    </li>
+                    <li>Sanagala Praveen</li>
+                    <li>UG Student, Dept. of CSE</li>
+
+                </ul>
+            </h5>
+            <h5 class="col-md-1 text-center"> </h5>
+
         </div>
-      </nav>
-
-      <div class="container">
-      <div class="row">
-        <div class="col-sm-6 banner-info">
-          <h1>Simple Secure </h1>
-          <p class="big-text">BlockChain Certify website</p>
-          <p>Certificates generated through us are secure and standard we believe in BlockChain</p>
-          <a class="btn btn-first" href="/verify.html">TO VERIFY</a>
-            
-          <a class="btn btn-second" href="/create.html">TO CREATE</a>
-         <!--<div id="particles-js"></div>
-          <script src="particles.js"></script>
-          <script src="app.js"></script>-->
+        <div class="row" id="contact">
 
         </div>
+    </div>
+    <footer>
+        <div class="col">
 
-        <div class="col-sm-6 banner-image">
-          <img src="pic1.png" class="img-responsive">
-          
-          
         </div>
+        <div class="col">
 
+        </div>
+        <div class="col">
 
-      </div>
-      </div>
-      </header>
-  </body>
+        </div>
+    </footer>
+    <script src="typingeffect.js"></script>
+</body>
+
 </html>
