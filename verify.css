@@ -1,0 +1,57 @@
+body {
+    padding: 1% 20%;
+    font-family: 'Fira Mono', monospace;
+    background: linear-gradient(rgba(47, 47, 255, 0.725), rgba(51, 125, 253, 0.83), rgb(0, 157, 255), rgb(51, 187, 255), rgb(28, 213, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    line-height: 50px;
+}
+
+img.logo {
+    vertical-align: middle;
+}
+
+div.optionlabel {
+    margin-bottom: 14px;
+}
+
+input[type="text"] {
+
+    border: none;
+    border-radius: 4px;
+
+}
+
+.inputs {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.659);
+    border-radius: 10px;
+}
+
+.mode {
+    display: none;
+}
+
+button[type="submit"] {
+    font-family: monospace;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: rgba(253, 194, 0, 0.666);
+}
+
+button[type="submit"]:hover {
+
+    background-color: rgba(253, 194, 0, 0.887);
+}
