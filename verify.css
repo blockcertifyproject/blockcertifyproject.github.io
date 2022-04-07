@@ -25,9 +25,11 @@ div.optionlabel {
 }
 
 input[type="text"] {
-
+    margin: 8px 0px;
+    padding: 10px 6px;
     border: none;
     border-radius: 4px;
+    width: 65%;
 
 }
 
@@ -43,15 +45,44 @@ input[type="text"] {
     display: none;
 }
 
-button[type="submit"] {
+button[type="button"] {
     font-family: monospace;
     border: none;
     border-radius: 5px;
     padding: 8px 15px;
-    background-color: rgba(253, 194, 0, 0.666);
+    background-color: rgb(229, 176, 0);
 }
 
-button[type="submit"]:hover {
+button[type="button"]:hover {
 
-    background-color: rgba(253, 194, 0, 0.887);
+    background-color: rgb(253, 194, 0);
+}
+
+.reloadmsg {
+    position: fixed;
+    padding: 10px;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.429);
+    border-radius: 10px;
+}
+
+.reloadmsg:hover {
+    background-color: white;
+    box-shadow: 10px 10px 7px rgba(70, 70, 70, 0.605);
+    cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+    margin: 5px 8px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+::-webkit-file-upload-button:hover {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid grey;
 }
