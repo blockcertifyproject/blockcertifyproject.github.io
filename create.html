@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+    <script src="create.js"></script>
+    <script src="loading.js"></script>
+    <link rel="stylesheet" href="loading.css">
+
+    <link rel="stylesheet" href="create.css">
+
+    <title>Create an NFT Document</title>
+
+
+
+</head>
+
+<body onload="hideLoading()">
+    <div id="loading"></div>
+    <h1>Create an NFT document on our site, <br>BlockCertify <img class="logo" src="logo.png" alt="" width="50px">
+    </h1>
+
+    <h2>
+        Connect your MetaMask wallet and provide the required inputs below to finish the NFT transaction
+
+    </h2>
+
+    <br>
+    <br>
+
+    <label for="1" class="inputs" style="text-align: center; vertical-align: middle;">
+        <button type="button" onclick="connectMetamask()">Connect MetaMask</button>
+        <br>
+        <img id="connectedImg" src="./tick.png" width="25rem" height="25rem" style="display:none;">
+        <span id="connectedMsg" style="display:none;">MetaMask Connected Successfully</span>
+        <p id="MetaMaskWarning"></p>
+    </label>
+
+    <label class="inputs" for="2">Enter Recipient's Wallet ID / Ethereum Account Address:
+        <br>
+        <br>
+        <input type="text" name="recpWallet" id="recpWallet" required oninput="enableButton()">
+    </label>
+
+    <label class="inputs" for="3">Upload the NFT File, and give its link below: (Starting with https:// or ipfs://)
+        <br>
+        <br>
+        <input type="text" name="filelink" id="filelink" required oninput="enableButton()">
+    </label>
+
+    <label for="4" class="inputs" style="text-align: center; vertical-align: middle;">
+        <button type="button" onclick="makeMyNFT()" id="finalSubmit" disabled>Create NFT</button>
+    </label>
+
+    <label for="5" style="display:none;" id="TrxResult"></label>
+
+
+
+</body>
+
+</html>
