@@ -1,10 +1,12 @@
+
+
 function buf2hex(buffer) { // buffer is an ArrayBuffer
     return [...new Uint8Array(buffer)]
         .map(x => x.toString(16).padStart(2, '0'))
         .join('');
 }
 
-function compareCwa() {
+function compareCwa() {//cwa - certifier's wallet address
     var c1 = document.getElementById("cwa").innerHTML.toLowerCase();
     var c2 = document.getElementById("CompareCwaIp").value.toLowerCase();
 
