@@ -16,6 +16,10 @@
 
     <!-- icon -->
     <link rel="icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <script src="loading.js"></script>
+    <link rel="stylesheet" href="loading.css">
+
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +35,8 @@
 
 </head>
 
-<body onload="typeWriter()">
+<body onload="typeWriter(); hideLoading()">
+    <div id="loading"></div>
     <header class="header">
 
 
