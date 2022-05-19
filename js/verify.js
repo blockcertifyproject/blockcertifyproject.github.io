@@ -12,10 +12,14 @@ function compareCwa() {//cwa - certifier's wallet address
 
     var o1 = "Certifier Addresses Matched";
     var o2 = "Certifier address not matched.";
-    if (c1.localeCompare(c2) == 0)
+    if (c1.localeCompare(c2) == 0) {
         document.getElementById("cwamessage").innerHTML = o1;
-    else
+        document.getElementById("cwamessage").className = "successmsg";
+    }
+    else {
         document.getElementById("cwamessage").innerHTML = o2;
+        document.getElementById("cwamessage").className = "failuremsg";
+    }
 
 }
 
@@ -59,10 +63,12 @@ async function showStatus() {
         let res = null;
         try {
             res = await provider.getTransaction(trx);
-            console.log(res);
+            document.getElementById("errorMessage").style.display = "none";
+            // console.log(res);
         }
         catch (err) {
             document.getElementById("errorMessage").innerHTML = "<br>You have entered a wrong transaction ID.";
+            document.getElementById("errorMessage").style.display = "block";
             flag = 1;
         }
         if (flag == 0) {
@@ -130,9 +136,11 @@ async function showStatus() {
         let res = null;
         try {
             res = await provider.getTransaction(trx);
+            document.getElementById("errorMessage").style.display = "none";
         }
         catch (err) {
             document.getElementById("errorMessage").innerHTML = "<br>You have entered a wrong transaction ID.";
+            document.getElementById("errorMessage").style.display = "block";
             flag = 1;
         }
 
@@ -177,9 +185,11 @@ async function showStatus() {
                         let CompareRes = "";
                         if (s1.localeCompare(s2) == 0) {
                             CompareRes = s3;
+                            document.getElementById("comparisionFilehash").className = "successmsg";
                         }
                         else {
                             CompareRes = s4;
+                            document.getElementById("comparisionFilehash").className = "failuremsg";
                         }
 
                         // document.getElementById("FileHashOutput").innerHTML = "The hash of NFT file is : ".concat(fileHashObtained);
@@ -240,10 +250,11 @@ async function showStatus() {
         let res = null;
         try {
             res = await provider.getTransaction(trx);
-
+            document.getElementById("errorMessage").style.display = "none";
         }
         catch (err) {
             document.getElementById("errorMessage").innerHTML = "<br>You have entered a wrong transaction ID.";
+            document.getElementById("errorMessage").style.display = "block";
             flag = 1;
         }
 
@@ -282,9 +293,11 @@ async function showStatus() {
                         var CompareRes = "";
                         if (s1.localeCompare(s2) == 0) {
                             CompareRes = "<br><br>Your Uploaded File and NFT File Hashes match. Your file in UN-altered.";
+                            document.getElementById("comparisionFilehash").className = "successmsg";
                         }
                         else {
                             CompareRes = "<br><br>Your Uploaded File and NFT File on Blockchain Hashes DID NOT match. Your file IS altered.";
+                            document.getElementById("comparisionFilehash").className = "failuremsg";
                         }
                         // document.getElementById("FileHashOutput").innerHTML = "The hash of NFT file is : ".concat(fileHashObtained);
                         document.getElementById("comparisionFilehash").innerHTML =
