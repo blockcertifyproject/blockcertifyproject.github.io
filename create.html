@@ -7,16 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:ital@1&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="./images/logo.png">
 
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 
-    <script src="create.js"></script>
-    <script src="loading.js"></script>
-    <link rel="stylesheet" href="loading.css">
+    <script src="./js/create.js"></script>
+    <script src="./js/loading.js"></script>
+    <link rel="stylesheet" href="./css/loading.css">
 
-    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="./css/create.css">
 
     <title>Create an NFT Document</title>
 
@@ -26,7 +26,8 @@
 
 <body onload="hideLoading()">
     <div id="loading"></div>
-    <h1>Create an NFT document on our site, <br>BlockCertify <img class="logo" src="logo.png" alt="" width="50px">
+    <h1>Create an NFT document on our site, <br>BlockCertify <img class="logo" src="./images/logo.png" alt=""
+            width="50px">
     </h1>
 
     <h2>
@@ -40,7 +41,7 @@
     <label for="1" class="inputs" style="text-align: center; vertical-align: middle;">
         <button type="button" onclick="connectMetamask()">Connect MetaMask</button>
         <br>
-        <img id="connectedImg" src="./tick.png" width="25rem" height="25rem" style="display:none;">
+        <img id="connectedImg" src="./images/tick.png" width="25rem" height="25rem" style="display:none;">
         <span id="connectedMsg" style="display:none;">MetaMask Connected Successfully</span>
         <p id="MetaMaskWarning"></p>
     </label>
@@ -58,10 +59,33 @@
     </label>
 
     <label for="4" class="inputs" style="text-align: center; vertical-align: middle;">
-        <button type="button" onclick="makeMyNFT()" id="finalSubmit" disabled>Create NFT</button>
+        <button type="button" onclick="makeMyNFT()" id="finalSubmit" disabled>Create NFT</button><br>
+
+
     </label>
 
-    <label for="5" style="display:none;" id="TrxResult"></label>
+    <label for="5" class="inputs" style="display:none;" id="TrxResult">
+        Transaction Initiated !
+        <img src='./images/tick.gif' width="25rem" height="25rem">
+        <br>
+        <br>
+        Transaction ID :
+        <br><input type="text" id="trxidtxtbox" disabled>
+
+        <p align="center">
+            <img id="cpimg" src="./images/copy.png" alt="Copy" role="button" height="25px" onclick="copyTrx()">
+        </p>
+        <br>
+        Immediately copy this Transaction ID to a safe location.
+        <br><br>
+        Track at our Verify page:
+        <form action="https://blockcertifyproject.github.io/verify.html" style="display:inline">
+            <button type="submit">Verify</button>
+        </form>
+
+
+
+    </label>
 
 
 
