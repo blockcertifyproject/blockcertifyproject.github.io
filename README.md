@@ -1,4 +1,4 @@
-# ![BlockCertify Logo](//images/logo.png) BlockCertify v1 
+# ![BlockCertify Logo](images/logo.png) BlockCertify v1 
 https://blockcertifyproject.github.io
 
 # NOTE:
