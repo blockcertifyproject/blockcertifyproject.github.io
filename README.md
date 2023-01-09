@@ -1,4 +1,4 @@
-# ![BlockCertify Logo](images/logo.png | width=45) BlockCertify v1 
+# <img src="https://raw.githubusercontent.com/blockcertifyproject/blockcertifyproject.github.io/36c4c98ca5de0260895047ed455777fbaecd7b73/images/logo.png" width="40" height="40"> BlockCertify v1 
 https://blockcertifyproject.github.io
 
 # NOTE:
