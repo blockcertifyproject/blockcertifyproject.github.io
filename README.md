@@ -1,7 +1,7 @@
 # blockcertifyproject.github.io
 
 # NOTE:
-Since the ropsten test network, based on which this project has been developed will be deprecated and shut down, the application might not function as desired. 
+Since the ropsten test network, based on which this project has been developed will be deprecated and shut down, the application might not function as desired. You can refer our video :film_strip: here: https://www.youtube.com/watch?v=pWws-u1at-k 
 
 Read more about it here: https://blog.ethereum.org/2022/06/21/testnet-deprecation
 
