@@ -2,17 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>BlockCertify | Create and Verify NFT Certificates</title>
-    <!--<link href="styles.css" rel="stylesheet" type="text/css">-->
+    <title>BlockCertify v2 | Create and Verify NFT Certificates</title>
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-
-    <!-- jQuery library -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-
-    <!-- Latest compiled JavaScript -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
     <!-- icon -->
     <link rel="icon" type="image/png" href="./images/logo.png">
@@ -20,18 +11,18 @@
     <script src="./js/loading.js"></script>
     <link rel="stylesheet" href="./css/loading.css">
 
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
-
-
 
 </head>
 
@@ -39,11 +30,10 @@
     <div id="loading"></div>
     <header class="header">
 
-
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
-                BlockCertify</a>
+                BlockCertify <sub><sub>v2</sub></sub></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,18 +55,22 @@
         </nav>
 
     </header>
+
+    <div id="stickynote"><a href="https://github.com/blockcertifyproject/blockcertifyproject.github.io/tree/legacyVer1">
+            Version 1 link! </a>
+    </div>
     <div class="container">
         <div class="row" id="home">
-            <div class="col-sm-6 banner-info">
-                <h2 class="firamono" id="TypingEffectText">Certify and Verify documents with the Blockchain
-                </h2>
+            <div class="col-sm-6 banner-info" id="homeleftpane">
 
-                <p class="big-text">BlockCertify</p>
-                <p class="firamono">Educational Certificates, Legal Docs or Bonds, create NFTs for existing physical
-                    documents, and
-                    verify
-                    their
-                    credibility from anywhere around the globe.</p>
+                <p class="big-text mb-1">BlockCertify<sub><sub>v2</sub></sub></p>
+
+                <textarea readonly type="text" class="col robotomono mb-2 mt-0"
+                    id="TypingEffectText">Certify and Verify documents with the Blockchain</textarea>
+                <p class="firamono mt-0">
+                    Educational Certificates, Legal Docs or Bonds, create NFTs for existing physical documents, and
+                    verify their credibility from anywhere around the globe.
+                </p>
                 <a class="btn btn-first" href="./verify.html">VERIFY</a>
                 <a class="btn btn-second" href="./create.html">CREATE</a>
             </div>
@@ -87,21 +81,52 @@
         </div>
         <div class="row" id="about">
             <h3 class="text-center mb-3">ABOUT US</h3>
-            <p class="text-center firamono mb-5">We are a group of passionate and goal-driven students developing this
+            <p class="text-center firamono mb-5">
+                I have developed the version 2 of this project solely out of my passion and interest to refine, resolve
+                and debug issues from version 1.
+                The new version 2 features a more-secure verification mechanism to recognise fake documents, even in a
+                situation where the original file is lost, or its link is not accessible.
+                <br><br>
+                A group of passionate and goal-driven students developed the version 1 of this
                 product /
                 software as a part of our
-                Bachelor's degree Project. We are making use of the Blockchain Technology to power our application,
+                Bachelor's degree Project. We made use of the Blockchain Technology to power our application,
                 where we
-                record transaction data and generate NFT Certificates by the inputs given by user.</p>
+                recorded transaction data and generated NFT Certificates from the inputs given by user.
+            </p>
             <br><br>
-            <h4 class="text-center">Our Team</h4><br>
+
+            <h4 class="text-center">Credits</h4><br>
+
             <h6 class="col-md-1 text-center"> </h6>
+            <h6 class="col-md-10 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img" src="./profileimgs/5c0.jpg">
+                    </li>
+                    <a href="https://linkedin.com/in/vishaldhatrika/">
+                        <li>Vishal Dhatrika</li>
+                    </a>
+                    <li>MS Computer Science, UMKC</li>
+
+                </ul>
+            </h6>
+
+            <h6 class="col-md-1 text-center"> </h6>
+
+
+            <h4 class="text-center">The team behind BlockCertify v1</h4><br>
+
+            <h6 class="col-md-1 text-center"> </h6>
+
             <h6 class="col-md-2 text-center">
                 <ul>
                     <li>
                         <img class="profile-img" src="./profileimgs/sir.jpeg">
                     </li>
-                    <a href="https://scholar.google.co.in/citations?user=d1GhC-4AAAAJ&hl=en"> <li>Dr. P Chinnasamy</li></a>
+                    <a href="https://scholar.google.co.in/citations?user=d1GhC-4AAAAJ&hl=en">
+                        <li>Dr. P Chinnasamy</li>
+                    </a>
                     <li>Associate Professor, Project Guide</li>
 
                 </ul>
@@ -112,7 +137,9 @@
                     <li>
                         <img class="profile-img" src="./profileimgs/5c0.jpg">
                     </li>
-                    <a href="https://linkedin.com/in/vishaldhatrika/"> <li>Vishal Dhatrika</li></a>
+                    <a href="https://linkedin.com/in/vishaldhatrika/">
+                        <li>Vishal Dhatrika</li>
+                    </a>
                     <li>UG Student, Dept. of CSE</li>
 
                 </ul>
@@ -122,7 +149,9 @@
                     <li>
                         <img class="profile-img" src="./profileimgs/571.jpeg">
                     </li>
-                    <a href="https://in.linkedin.com/in/hemanth-kumar-dachiraju-bb6a75184"><li>Hemanth Kumar Dachiraju</li></a>
+                    <a href="https://in.linkedin.com/in/hemanth-kumar-dachiraju-bb6a75184">
+                        <li>Hemanth Kumar Dachiraju</li>
+                    </a>
                     <li>UG Student, Dept. of CSE</li>
 
                 </ul>
@@ -142,7 +171,9 @@
                     <li>
                         <img class="profile-img" src="./profileimgs/5b0.jpeg">
                     </li>
-                    <a href="https://in.linkedin.com/in/praveen-sanagala-06a15a210"><li>Sanagala Praveen</li></a>
+                    <a href="https://in.linkedin.com/in/praveen-sanagala-06a15a210">
+                        <li>Sanagala Praveen</li>
+                    </a>
                     <li>UG Student, Dept. of CSE</li>
 
                 </ul>
@@ -162,20 +193,24 @@
 
                 <ul>
                     <li>blockcertifyproject@gmail.com</li>
-                    <li>MLR Institute of Technology</li>
+                    <!-- <li>MLR Institute of Technology</li>
                     <li>Dundigal, Hyderabad</li>
-                    <li>500043</li>
+                    <li>500043</li> -->
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col text-center text-muted">
-                Content owned and developed by Batch B-16 (2018-2022), Department of CSE, MLR Institute of Technology,
+                Version 2 developed by <a href="https://vishaldhatrika.me">Vishal Dhatrika</a>.
+                Version 1 Content owned and developed by Batch B-16 (2018-2022), Department of CSE, MLR Institute of
+                Technology,
                 Hyderabad, IN.</div>
         </div>
         <div class="row">
-        <div class="col text-center text-danger">
-               This project is not under maintenance now. After the Ethereum Merge (shift to PoS) the transactions are not submitted.
+            <div class="col text-center text-danger">
+                This is the new version 2 of the BlockCertify Project. To refer to version 1 docs, go to the Github
+                repository (branch - legacyVer1) <a
+                    href="https://github.com/blockcertifyproject/blockcertifyproject.github.io/tree/legacyVer1">here.</a>
             </div>
         </div>
     </footer>
